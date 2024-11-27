@@ -1,4 +1,4 @@
-# KAMOME
+# KAMOME ![kamome](kamome.png)
 ## A header-only library for fixed-point formats in C++
 
 Since KAMOME requires a inline static member, use C++17 or more.
