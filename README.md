@@ -6,7 +6,7 @@
 ## Examples
 
 ```c++
-#include "kamome/types"
+#include "kamome/types.hpp"
 
 int main() {
   return 0;
