@@ -28,10 +28,10 @@ template <typename val_t, typename mid_t, uint32_t> struct _fixed_t {
 
   constexpr _fixed_t() : val(0) {}
   constexpr _fixed_t(const _fixed_t &in) = default;
-  template <class C, KAMOME_ENABLER(is_fixed_point_v<C>)>
-  constexpr _fixed_t(const C &in)
-      : val((bit < in.bit) ? in.val >> (in.bit - bit)
-                           : in.val << (bit - in.bit)) {}
+  // template <class C, KAMOME_ENABLER(is_fixed_point_v<C>)>
+  // constexpr _fixed_t(const C &in)
+  //     : val((bit < in.bit) ? in.val >> (in.bit - bit)
+  //                          : in.val << (bit - in.bit)) {}
 
   template <typename T, KAMOME_ENABLER(std::is_integral_v<T>)>
   constexpr _fixed_t(const T in) : val(in << bit) {}
