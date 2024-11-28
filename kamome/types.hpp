@@ -96,6 +96,7 @@ struct is_fixed_point<_fixed_t<a, b, c>> {
 template <uint32_t _> using fixed8_t = impl::_fixed_t<int8_t, int16_t, _>;
 template <uint32_t _> using fixed16_t = impl::_fixed_t<int16_t, int32_t, _>;
 template <uint32_t _> using fixed32_t = impl::_fixed_t<int32_t, int64_t, _>;
+template <uint32_t _> using fixed64_t = impl::_fixed_t<int64_t, int64_t, _>;
 
 } // namespace kmm
 
