@@ -47,10 +47,10 @@ template <typename val_t, typename mid_t, uint32_t> struct _fixed_t {
     return T(val) / (1 << bit);
   }
 #if _has_keyword(__fp16)
-  constexpr operator __fp16() const { return __fp16(val) / (1 << bit); }
+//  constexpr operator __fp16() const { return __fp16(val) / (1 << bit); }
 #endif
 #if _has_keyword(__half)
-  constexpr operator __half() const { return __half(val) / (1 << bit); }
+//  constexpr operator __half() const { return __half(val) / (1 << bit); }
 #endif
 
   template <typename T, KAMOME_ENABLER(std::is_arithmetic_v<T>)>
