@@ -2,9 +2,8 @@
 
 <img src="kamome.png" width="100">
 
-## A header-only library for fixed-point formats in C++
-
-Since KAMOME requires an inline static member, use C++17 or more.
+KAMOME is a header-only library for fixed-point formats in C++.
+Since it uses an inline static member, use C++17 or later.
 
 ## Examples
 
